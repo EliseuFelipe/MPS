@@ -6,7 +6,11 @@ import Entidades.Funcionario;
 
 public class RepositorioFuncionario {
     
-    private List<Funcionario> listaCliente = new ArrayList<Funcionario>();
+    private List<Funcionario> listaFuncionario = new ArrayList<Funcionario>();
 
     public RepositorioFuncionario(){}
+    
+    public void adicionarFuncionario(Funcionario funcionario){
+    	listaFuncionario.add(funcionario);
+    }
 }

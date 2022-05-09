@@ -7,7 +7,11 @@ import Entidades.Produto;
 
 public class RepositorioProduto {
  
-    private List<Produto> listaCliente = new ArrayList<Produto>();
+    private List<Produto> listaProduto = new ArrayList<Produto>();
 
     public RepositorioProduto(){}
+    
+    public void adicionarProduto(Produto produto){
+    	listaProduto.add(produto);
+    }
 }
