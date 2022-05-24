@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Entidades.Cliente;
+import Entidades.ClientePJ;
 import Entidades.Funcionario;
 import Entidades.Produto;
 

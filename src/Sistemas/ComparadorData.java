@@ -8,7 +8,7 @@ public class ComparadorData implements Comparator<Cliente> {
 
 	@Override
 	public int compare(Cliente c1, Cliente c2) {
-		//A função irá retornar positivo se c1 for mais velho que c2
+		//A funï¿½ï¿½o irï¿½ retornar positivo se c1 for mais velho que c2
 		if(c1.getdata_nascimento().getAno() < c2.getdata_nascimento().getAno()){
 			return -1;
 		}

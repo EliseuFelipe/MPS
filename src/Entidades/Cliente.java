@@ -3,7 +3,7 @@ package Entidades;
 import Sistemas.Data;
 import java.lang.Comparable;
 
-public class Cliente implements Comparable<Cliente> {
+public class Cliente implements Comparable<ClientePJ> {
     
     private String nome;
     private String endereco;
@@ -25,11 +25,11 @@ public class Cliente implements Comparable<Cliente> {
     }
     
     @Override
-	public int compareTo(Cliente c) {
+	public int compareTo(ClientePJ c) {
 		return nome.compareToIgnoreCase(c.getNome());
 	}
     
-	public int compareTo(Cliente c, Data d) {
+	public int compareTo(ClientePJ c, Data d) {
 		return nome.compareToIgnoreCase(c.getNome());
 	}
 
