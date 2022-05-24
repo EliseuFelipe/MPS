@@ -6,12 +6,14 @@ public class Produto {
     private Float valor;
     private String descricao;
     private String imagem;
+    private String codigo;
 
-    public Produto(String nome, Float valor, String descricao, String imagem) {
+    public Produto(String nome, Float valor, String descricao, String imagem, String codigo) {
         this.nome = nome;
         this.valor = valor;
         this.descricao = descricao;
         this.imagem = imagem;
+        this.codigo = codigo;
     }
 
     public String getNome() {
@@ -46,4 +48,11 @@ public class Produto {
         this.imagem = imagem;
     }  
 
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }  
 }
