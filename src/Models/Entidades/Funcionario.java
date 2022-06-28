@@ -12,10 +12,10 @@ public class Funcionario {
     private String senha;
     private List<Produto> listaDeCompras = new ArrayList<>();
     private int tipoFuncionario;
-    private Long rg;
+    private int rg;
 
     public Funcionario(String nome, String endereco, String sexo, String login, String senha,
-            List<Produto> listaDeCompras, int tipoFuncionario, Long rg) {
+            List<Produto> listaDeCompras, int tipoFuncionario, int rg) {
         this.nome = nome;
         this.endereco = endereco;
         this.sexo = sexo;
@@ -25,7 +25,7 @@ public class Funcionario {
         this.tipoFuncionario = tipoFuncionario;
         this.rg = rg;
     }
-    public Funcionario(String nome, String endereco, String sexo, String login, String senha, int tipoFuncionario, Long rg) {
+    public Funcionario(String nome, String endereco, String sexo, String login, String senha, int tipoFuncionario, int rg) {
         this.nome = nome;
         this.endereco = endereco;
         this.sexo = sexo;
@@ -79,10 +79,10 @@ public class Funcionario {
         this.senha = senha;
     }
 
-    public Long getRG() {
+    public int getRG() {
         return this.rg;
     }
-    public void setRG(Long rg) {
+    public void setRG(int rg) {
         this.rg = rg;
     }
 

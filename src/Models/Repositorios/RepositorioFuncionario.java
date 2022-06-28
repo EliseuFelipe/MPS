@@ -1,4 +1,4 @@
-package Repositorios;
+package Models.Repositorios;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,11 +33,11 @@ public class RepositorioFuncionario {
         return listaFuncionario;
     }
 
-    public Funcionario listarFuncionario(Long rg) {
+    public Funcionario listarFuncionario(int rg) {
         Funcionario funcionario = null;
 
         for (Funcionario func : listaFuncionario) {
-            if(func.getRG().equals(rg)){
+            if(func.getRG() == rg){
                 funcionario = func;
                 break;
             }
@@ -68,7 +68,7 @@ public class RepositorioFuncionario {
         }
     }
 
-    public void removerFuncionario(Long rg){
+    public void removerFuncionario(int rg){
         Funcionario funcionario = listarFuncionario(rg);
 
         if(funcionario != null){

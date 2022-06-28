@@ -1,12 +1,14 @@
-package Repositorios;
+package Models.Repositorios;
 
 public class BancoDeDados {
     
     private RepositorioFuncionario listaFuncionario;
     private RepositorioProduto listaProduto;
-    private RepositorioCliente listaCliente;
 
-    public BancoDeDados(){}
+    public BancoDeDados(){
+        this.listaFuncionario = new RepositorioFuncionario();
+        this.listaProduto = new RepositorioProduto();
+    }
 
     public RepositorioFuncionario getListaFuncionarios(){
         if(listaFuncionario != null){
@@ -16,6 +18,7 @@ public class BancoDeDados {
         }
         return listaFuncionario;
     }
+    
     public RepositorioProduto getListaProdutos(){
         if(listaProduto != null){
             return listaProduto;
@@ -24,12 +27,5 @@ public class BancoDeDados {
         }
         return listaProduto;
     }
-    public RepositorioCliente getListaClientes(){
-        if(listaFuncionario != null){
-            return listaCliente;
-        } else {
-            listaCliente = new RepositorioCliente();
-        }
-        return listaCliente;
-    }
+
 }
